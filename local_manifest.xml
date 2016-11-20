@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="git://github.com/" name="gh" />
+
+  <remove-project name="CyanogenMod/android_bionic" />
+  <remove-project name="CyanogenMod/android_build" />
+  <remove-project name="CyanogenMod/android_system_core" />
+  <remove-project name="CyanogenMod/android_system_netd" />
+  <remove-project name="CyanogenMod/android_system_vold" />
+  <remove-project name="CyanogenMod/android_external_sepolicy" />
+  <remove-project name="CyanogenMod/android_external_tinyalsa" />
+  <remove-project name="CyanogenMod/android_external_tinycompress" />
+  <remove-project name="CyanogenMod/android_frameworks_av" />
+  <remove-project name="CyanogenMod/android_frameworks_base" />
+  <remove-project name="CyanogenMod/android_frameworks_native" />
+  <remove-project name="CyanogenMod/android_frameworks_rs" />
+  <remove-project name="CyanogenMod/android_frameworks_opt_net_ims" />
+  <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_display" />
+  <remove-project name="CyanogenMod/android_hardware_libhardware" />
+  <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
+  <remove-project name="CyanogenMod/android_packages_services_Telecomm" />
+  <remove-project name="CyanogenMod/android_packages_services_Telephony" />
+  <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
+  <remove-project name="CyanogenMod/android_external_jpeg" />
+
+  <project path="build" name="Developers4Mediatek/android_build" remote="gh" revision="cm-13.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="system/core" name="Developers4Mediatek/android_system_core" remote="gh" revision="cm-13.0" />
+  <project path="system/netd" name="Developers4Mediatek/android_system_netd" remote="gh" revision="cm-13.0" />
+  <project path="system/vold" name="Developers4Mediatek/android_system_vold" revision="cm-13.0" />
+  <project path="external/jpeg" name="Developers4Mediatek/android_external_jpeg" remote="gh" revision="cm-13.0" />
+  <project path="external/sepolicy" name="jianminglok/android_external_sepolicy" remote="gh" revision="cm-13.0" />
+  <project path="external/tinyalsa" name="jianminglok/android_external_tinyalsa" remote="gh" revision="cm-13.0" />
+  <project path="external/tinycompress" name="jianminglok/android_external_tinycompress_mtk" remote="gh" />
+  <project path="frameworks/av" name="Developers4Mediatek/android_frameworks_av" remote="gh" revision="cm-13.0" />
+  <project path="frameworks/base" name="Developers4Mediatek/android_frameworks_base" remote="gh" revision="cm-13.0" />
+  <project path="frameworks/native" name="Developers4Mediatek/android_frameworks_native" remote="gh" revision="cm-13.0" />
+  <project path="frameworks/rs" name="Developers4Mediatek/android_frameworks_rs" remote="gh" revision="cm-13.0" />
+  <project path="bionic" name="Developers4Mediatek/android_bionic" remote="gh" revision="cm-13.0" />
+  <project path="frameworks/opt/net/ims" name="Developers4Mediatek/android_frameworks_opt_net_ims" remote="gh" revision="cm-13.0" />
+  <project path="frameworks/opt/telephony" name="Developers4Mediatek/android_frameworks_opt_telephony" remote="gh" revision="cm-13.0" />
+  <project path="hardware/libhardware" name="Developers4Mediatek/android_hardware_libhardware" remote="gh" revision="cm-13.0" />
+  <project path="hardware/libhardware_legacy" name="Developers4Mediatek/android_hardware_libhardware_legacy" remote="gh" revision="cm-13.0" />
+  <project path="packages/services/Telecomm" name="Developers4Mediatek/android_packages_services_Telecomm" remote="gh" revision="cm-13.0" />
+  <project path="packages/services/Telephony" name="Developers4Mediatek/android_packages_services_Telephony" remote="gh" revision="cm-13.0" />
+
+  <project path="vendor/xiaomi/hermes" name="nofearnohappy/vendor_CM13" remote="gh" revision="master" />
+  <project path="device/xiaomi/hermes" name="nofearnohappy/device_CM13" remote="gh" revision="master" />
+  <project path="kernel/mediatek/hermes" name="Pesach85/kernel_6.0_hermes_update_test" remote="gh" revision="master" />
+
+  <!-- vim:set ai et ts=2 sw=2 sts=2 fenc=utf-8: -->
+</manifest>
